@@ -1,0 +1,15 @@
+@import "../Framework.scss";
+#programs-section {
+  .cart {
+    .cart-footer {
+        .custom-icon {
+        font-size: 16px;
+      }
+      .custom-btn-sm-borderless:hover {
+        .custom-icon {
+          color: $white;
+        }
+      }
+    }
+  }
+}

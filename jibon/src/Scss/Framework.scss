@@ -1,0 +1,991 @@
+@import "./Default.scss";
+
+// * table of class content
+/* 
+>> section margin
+>> section padding
+>> heading style for h1 tag
+>> syb heading
+>> input field
+>> link style
+>> navigation property
+>> custom button style
+>> custom cart
+>> custom content box
+>> icon style
+>> border-radius
+>> margin y & x axis
+>> margin left, right, top, bottom
+>> padding y & x axis
+>> padding left, right, top, bottom
+>> enable dark mood
+ */
+
+// todo **************** each section gap ****************
+.section-gap {
+  margin-top: 170px;
+}
+
+// todo **************** each section padding ****************
+.section-padding {
+  padding: 20px 0;
+}
+
+// todo **************** heading style [note: for only h1 tag] ****************
+.custom-title {
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 900;
+  font-size: calc(100% + 1.5vw + 0.7vh);
+  color: $success;
+}
+
+// todo **************** sub heading style [note: for only h3, h4, h5, h6 tag] ****************
+.custom-sub-title {
+  text-transform: capitalize;
+  font-size: calc(100% + 0.5vw + 0.3vh);
+  font-weight: 700;
+}
+
+.section-header {
+  text-transform: uppercase;
+  font-size: calc(100% + 0.1vw + 0.1vh);
+  font-weight: 600;
+  font-family: "Poppins", sans-serif !important;
+}
+
+// todo **************** hero title ****************
+.hero-title {
+  text-transform: capitalize;
+  font-family: "Roboto", sans-serif !important;
+  letter-spacing: 1px;
+  font-size: clamp(19px, 2vw, 22px);
+}
+
+// todo **************** CUSTOM INPUT FIELD START ****************
+.custom-input {
+  padding: 12px;
+  background-color: transparent;
+  border: 1px solid $success;
+  text-transform: capitalize;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+
+  &:focus {
+    box-shadow: none;
+    background-color: transparent;
+  }
+}
+
+// todo **************** CUSTOM LINK START ****************
+.custom-link {
+  text-decoration: none;
+  text-transform: capitalize;
+  display: block;
+  color: $light_gray;
+  font-size: 15px;
+
+  &:hover {
+    color: $success;
+  }
+}
+
+// todo **************** NAVIGATION PROPERTY ****************
+.custom-nav {
+  background-color: transparent;
+  padding: 15px 0;
+  z-index: 1;
+
+  .custom-nav-brand {
+    text-transform: uppercase;
+    font-size: 30px;
+    text-decoration: none;
+    color: $success;
+    font-weight: 800;
+    letter-spacing: 1px;
+
+    &:hover {
+      color: $danger;
+    }
+  }
+  .custom-nav-link {
+    text-transform: uppercase;
+    padding: 10px;
+    margin: 8px 5px;
+    text-decoration: none;
+    color: $success;
+    font-size: 16px;
+    letter-spacing: 1px;
+
+    &:hover {
+      color: $danger;
+    }
+  }
+}
+
+// scrolling style effect
+.scroll-nav {
+  background-color: $white;
+  padding: 15px 0;
+  box-shadow: $beautiful_css_box_shadow_6;
+  z-index: 1;
+
+  .custom-nav-brand {
+    text-transform: uppercase;
+    font-size: 30px;
+    text-decoration: none;
+    color: $success;
+    font-weight: 800;
+    letter-spacing: 1px;
+
+    &:hover {
+      color: $dark;
+    }
+  }
+  .custom-nav-link {
+    text-transform: uppercase;
+    padding: 10px;
+    margin: 8px 5px;
+    text-decoration: none;
+    color: $dark;
+    font-size: 15px;
+    letter-spacing: 1px;
+
+    &:hover {
+      color: $success;
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .custom-nav,
+  .scroll-nav {
+    background-color: $white;
+
+    .custom-nav-link {
+      margin: 5px 0;
+      display: block;
+      padding: 5px 0;
+    }
+  }
+}
+
+// todo **************** CUSTOM BUTTON START ****************
+.custom-btn-lg {
+  text-transform: uppercase;
+  padding: 12px 23px;
+  font-size: 17px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  border-radius: 13px;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -ms-border-radius: 13px;
+  -o-border-radius: 13px;
+  transition: $custom-transition;
+  -webkit-transition: $custom-transition;
+  -moz-transition: $custom-transition;
+  -ms-transition: $custom-transition;
+  -o-transition: $custom-transition;
+}
+.custom-btn-sm {
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  transition: $custom-transition;
+  -webkit-transition: $custom-transition;
+  -moz-transition: $custom-transition;
+  -ms-transition: $custom-transition;
+  -o-transition: $custom-transition;
+}
+.custom-btn-sm-reverse {
+  background-color: transparent;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  border: 1px solid $success;
+  color: $success;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  transition: $custom-transition;
+  -webkit-transition: $custom-transition;
+  -moz-transition: $custom-transition;
+  -ms-transition: $custom-transition;
+  -o-transition: $custom-transition;
+
+  &:hover {
+    color: $white;
+    background-color: $success;
+  }
+}
+
+.custom-btn-sm-borderless {
+  background-color: transparent;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  //   border: 1px solid $dark;
+  color: $success;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  transition: $custom-transition;
+  -webkit-transition: $custom-transition;
+  -moz-transition: $custom-transition;
+  -ms-transition: $custom-transition;
+  -o-transition: $custom-transition;
+
+  &:hover {
+    color: $white;
+    background-color: $success;
+  }
+}
+// btn primary
+.custom-btn-primary {
+  background-color: $primary;
+  border: 1px solid $primary;
+  color: $white;
+
+  &:hover {
+    background-color: transparent;
+    color: $primary;
+  }
+}
+// btn secondary
+.custom-btn-secondary {
+  background-color: $secondary;
+  border: 1px solid $secondary;
+  color: $white;
+
+  &:hover {
+    background-color: transparent;
+    color: $secondary;
+  }
+}
+// btn orange
+.custom-btn-orange {
+  text-decoration: none;
+  background-color: $orange;
+  border: 1px solid $orange;
+  color: $white;
+
+  &:hover {
+    background-color: transparent;
+    color: $orange;
+  }
+}
+// btn info
+.custom-btn-info {
+  background-color: $info;
+  border: 1px solid $info;
+  color: $white;
+
+  &:hover {
+    background-color: transparent;
+    color: $info;
+  }
+}
+// btn dark
+.custom-btn-dark {
+  background-color: $dark;
+  border: 1px solid $dark;
+  color: $white;
+
+  &:hover {
+    background-color: $white;
+    color: $dark;
+  }
+}
+
+// btn danger
+.custom-btn-danger {
+  background-color: $danger;
+  border: 1px solid $danger;
+  color: $white;
+
+  &:hover {
+    background-color: transparent;
+    color: $danger;
+  }
+}
+// btn warning
+.custom-btn-warning {
+  background-color: $warning;
+  border: 1px solid $warning;
+  color: $white;
+
+  &:hover {
+    background-color: transparent;
+    color: $warning;
+  }
+}
+// btn orange
+.custom-btn-orange {
+  background-color: $success;
+  border: 1px solid $success;
+  color: $white;
+
+  &:hover {
+    background-color: transparent;
+    color: $success;
+  }
+}
+// btn white
+.custom-btn-white {
+  background-color: $white;
+  border: 1px solid $white;
+  color: $dark;
+
+  &:hover {
+    background-color: transparent;
+    color: $white;
+  }
+}
+// btn white
+.custom-btn-light {
+  background-color: $light;
+  border: 1px solid $light;
+  color: $dark;
+
+  &:hover {
+    background-color: transparent;
+    color: $light;
+  }
+}
+
+// todo *************** todo CUSTOM CARD START ****************
+.cart {
+  background-color: $white;
+  box-shadow: $beautiful_css_box_shadow_6;
+  border: 0;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.cart-body {
+  padding: 20px;
+}
+.cart-footer {
+  padding: 10px 20px 30px 20px;
+}
+.cart-img {
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+// h4 tag is recommended
+.cart-title {
+  text-transform: capitalize;
+  font-size: calc(100% + 0.2vw + 0.1vh);
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 500;
+}
+.cart-detail {
+  font-size: 16px;
+}
+
+// todo **************** custom content box ****************
+.custom-box {
+  padding: 20px;
+  border: 1px solid $light_gray;
+}
+
+// todo **************** font awesome or any icon style ****************
+/* 
+*example of jsx formate
+<div className="custom-icon-box">
+  <FontAwesomeIcon icon={faEnvelope} className="custom-icon" />
+</div>
+ */
+.custom-icon-box {
+  width: 45px;
+  height: 45px;
+  border: 1px solid $success;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.custom-icon {
+  text-decoration: none;
+  font-size: 22px;
+  display: inline-block;
+  color: $success;
+}
+
+// todo **************** several tag style ****************
+.custom-span-basic {
+  text-transform: capitalize;
+  font-size: 16px;
+  color: $success;
+}
+.custom-span-pro {
+  text-transform: capitalize;
+  // display: inline-block;
+  display: block;
+  font-size: 18px;
+  color: $success;
+  font-weight: 400;
+}
+
+// todo **************** CUSTOM BORDER RADIUS ****************
+.radius-none {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+.radius-3 {
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+.radius-5 {
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.radius-8 {
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+.radius-10 {
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.radius-13 {
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.radius-15 {
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+.radius-18 {
+  border-radius: 18px;
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+  -ms-border-radius: 18px;
+  -o-border-radius: 18px;
+}
+.radius-20 {
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.radius-25 {
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+.radius-circle {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+// todo **************** CUSTOM MARGIN START ****************
+// ***************** margin y axis ****************
+.cmy-0 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.cmy-5 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.cmy-10 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.cmy-15 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.cmy-20 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.cmy-25 {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.cmy-30 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.cmy-35 {
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+.cmy-40 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.cmy-45 {
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+.cmy-50 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.cmy-80 {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+.cmy-100 {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+// * **************** margin x axis ****************
+.cmx-5 {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.cmx-10 {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.cmx-15 {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.cmx-20 {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.cmx-25 {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+.cmx-30 {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.cmx-35 {
+  margin-left: 35px;
+  margin-right: 35px;
+}
+.cmx-40 {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.cmx-45 {
+  margin-left: 45px;
+  margin-right: 45px;
+}
+.cmx-50 {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+// * **************** margin left ****************
+.cml-5 {
+  margin-left: 5px;
+}
+.cml-10 {
+  margin-left: 10px;
+}
+.cml-15 {
+  margin-left: 15px;
+}
+.cml-20 {
+  margin-left: 20px;
+}
+.cml-25 {
+  margin-left: 25px;
+}
+.cml-30 {
+  margin-left: 30px;
+}
+.cml-35 {
+  margin-left: 35px;
+}
+.cml-40 {
+  margin-left: 40px;
+}
+.cml-45 {
+  margin-left: 45px;
+}
+.cml-50 {
+  margin-left: 50px;
+}
+
+// * **************** margin right ****************
+.cmr-5 {
+  margin-right: 5px;
+}
+.cmr-10 {
+  margin-right: 10px;
+}
+.cmr-15 {
+  margin-right: 15px;
+}
+.cmr-20 {
+  margin-right: 20px;
+}
+.cmr-25 {
+  margin-right: 25px;
+}
+.cmr-30 {
+  margin-right: 30px;
+}
+.cmr-35 {
+  margin-right: 35px;
+}
+.cmr-40 {
+  margin-right: 40px;
+}
+.cmr-45 {
+  margin-right: 45px;
+}
+.cmr-50 {
+  margin-right: 50px;
+}
+
+// * **************** margin top ****************
+.cmt-5 {
+  margin-top: 5px;
+}
+.cmt-10 {
+  margin-top: 10px;
+}
+.cmt-15 {
+  margin-top: 15px;
+}
+.cmt-20 {
+  margin-top: 20px;
+}
+.cmt-25 {
+  margin-top: 25px;
+}
+.cmt-30 {
+  margin-top: 30px;
+}
+.cmt-35 {
+  margin-top: 35px;
+}
+.cmt-40 {
+  margin-top: 40px;
+}
+.cmt-45 {
+  margin-top: 45px;
+}
+.cmt-50 {
+  margin-top: 50px;
+}
+.cmt-100 {
+  margin-top: 50px;
+}
+.cmt-120 {
+  margin-top: 50px;
+}
+
+// * **************** margin bottom ****************
+.cmb-5 {
+  margin-bottom: 5px;
+}
+.cmb-10 {
+  margin-bottom: 10px;
+}
+.cmb-15 {
+  margin-bottom: 15px;
+}
+.cmb-20 {
+  margin-bottom: 20px;
+}
+.cmb-25 {
+  margin-bottom: 25px;
+}
+.cmb-30 {
+  margin-bottom: 30px;
+}
+.cmb-35 {
+  margin-bottom: 35px;
+}
+.cmb-40 {
+  margin-bottom: 40px;
+}
+.cmb-45 {
+  margin-bottom: 45px;
+}
+.cmb-50 {
+  margin-bottom: 50px;
+}
+// todo **************** CUSTOM MARGIN END ****************
+
+// todo **************** CUSTOM PADDING START ****************
+// * **************** padding y axis ****************
+.cpy-5 {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.cpy-10 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.cpy-15 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.cpy-20 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.cpy-25 {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.cpy-30 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.cpy-35 {
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+.cpy-40 {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.cpy-45 {
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+.cpy-50 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.cpy-80 {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.cpy-100 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+// * **************** padding x axis ****************
+.cpx-5 {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.cpx-10 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.cpx-15 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.cpx-20 {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.cpx-25 {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.cpx-30 {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.cpx-35 {
+  padding-left: 35px;
+  padding-right: 35px;
+}
+.cpx-40 {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.cpx-45 {
+  padding-left: 45px;
+  padding-right: 45px;
+}
+.cpx-50 {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+// * **************** padding left ****************
+.cpl-5 {
+  padding-left: 5px;
+}
+.cpl-10 {
+  padding-left: 10px;
+}
+.cpl-15 {
+  padding-left: 15px;
+}
+.cpl-20 {
+  padding-left: 20px;
+}
+.cpl-25 {
+  padding-left: 25px;
+}
+.cpl-30 {
+  padding-left: 30px;
+}
+.cpl-35 {
+  padding-left: 35px;
+}
+.cpl-40 {
+  padding-left: 40px;
+}
+.cpl-45 {
+  padding-left: 45px;
+}
+.cpl-50 {
+  padding-left: 50px;
+}
+
+// * **************** padding right ****************
+.cpr-5 {
+  padding-right: 5px;
+}
+.cpr-10 {
+  padding-right: 10px;
+}
+.cpr-15 {
+  padding-right: 15px;
+}
+.cpr-20 {
+  padding-right: 20px;
+}
+.cpr-25 {
+  padding-right: 25px;
+}
+.cpr-30 {
+  padding-right: 30px;
+}
+.cpr-35 {
+  padding-right: 35px;
+}
+.cpr-40 {
+  padding-right: 40px;
+}
+.cpr-45 {
+  padding-right: 45px;
+}
+.cpr-50 {
+  padding-right: 50px;
+}
+
+// * **************** padding top ****************
+.cpt-5 {
+  padding-top: 5px;
+}
+.cpt-10 {
+  padding-top: 10px;
+}
+.cpt-15 {
+  padding-top: 15px;
+}
+.cpt-20 {
+  padding-top: 20px;
+}
+.cpt-25 {
+  padding-top: 25px;
+}
+.cpt-30 {
+  padding-top: 30px;
+}
+.cpt-35 {
+  padding-top: 35px;
+}
+.cpt-40 {
+  padding-top: 40px;
+}
+.cpt-45 {
+  padding-top: 45px;
+}
+.cpt-50 {
+  padding-top: 50px;
+}
+
+// ***************** padding bottom ****************
+.cpb-5 {
+  padding-bottom: 5px;
+}
+.cpb-10 {
+  padding-bottom: 10px;
+}
+.cpb-15 {
+  padding-bottom: 15px;
+}
+.cpb-20 {
+  padding-bottom: 20px;
+}
+.cpb-25 {
+  padding-bottom: 25px;
+}
+.cpb-30 {
+  padding-bottom: 30px;
+}
+.cpb-35 {
+  padding-bottom: 35px;
+}
+.cpb-40 {
+  padding-bottom: 40px;
+}
+.cpb-45 {
+  padding-bottom: 45px;
+}
+.cpb-50 {
+  padding-bottom: 50px;
+}
+// todo **************** CUSTOM PADDING END ****************

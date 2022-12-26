@@ -1,0 +1,25 @@
+.userProfile {
+  
+  top: 150px;
+}
+
+.card-body {
+  border: none;
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+    rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.imageBody {
+  width: 200px;
+  height: 170px;
+}
+.image {
+  width: 150px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+}

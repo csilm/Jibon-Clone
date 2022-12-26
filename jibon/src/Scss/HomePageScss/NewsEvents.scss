@@ -1,0 +1,28 @@
+@import "../Framework.scss";
+#news-event-section {
+  .cart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+      height: 350px;
+      width: 45%;
+      object-fit: fill;
+      object-position: center;
+      border-bottom-right-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+
+    .cart-footer {
+      .custom-icon {
+        font-size: 16px;
+      }
+      .custom-btn-sm-borderless:hover {
+        .custom-icon {
+          color: $white;
+        }
+      }
+    }
+  }
+}

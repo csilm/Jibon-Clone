@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap");
+
+// ! color variant
+$primary: #2133f8;
+$secondary: #00a676;
+$success: rgb(47, 204, 47);
+$lightSuccess: #60e224;
+$success_rgba: rgba(68, 185, 14, 0.6);
+// $success: #38b000;
+$info: #3d348b;
+$danger: #e63946;
+$warning: #ffb703;
+$white: #ffffff;
+$off_white: #edf2f4;
+$light: #f6fff8;
+$dark: #293241;
+$light_dark: #202c39;
+$black: #000000;
+$news_print: #e5e5e5;
+$orange: #d15b12;
+$orange_rgba: rgba(209, 91, 18, 0.6);
+$light_gray: #8d99ae;
+
+// ! body background color
+$body_background_dark: #051923;
+$body_background_light: #f7fff7;
+
+//! box shadow
+$beautiful_css_box_shadow_6: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+$beautiful_css_box_shadow_28: rgba(0, 0, 0, 0.16) 0px 3px 6px,
+  rgba(0, 0, 0, 0.23) 0px 3px 6px;
+$beautiful_css_box_shadow_35: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+$beautiful_css_box_shadow_59: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+
+// ! transition
+$custom-transition: ease-in-out 0.2s;
+
+// ! text color
+.text-primary {
+  color: $primary;
+}
+.text-secondary {
+  color: $secondary;
+}
+.text-success {
+  color: $success;
+}
+.text-info {
+  color: $info;
+}
+.text-danger {
+  color: $danger;
+}
+.text-warning {
+  color: $warning;
+}
+.text-white {
+  color: $white;
+}
+.text-off-white {
+  color: $off_white;
+}
+.text-light {
+  color: $light;
+}
+.text-dark {
+  color: $light;
+}
+.text-light-dark {
+  color: $light_dark;
+}
+.text-black {
+  color: $black;
+}
+.text-news-print {
+  color: $news_print;
+}
+.text-gray {
+  color: $light_gray;
+}
+.text-orange {
+  color: $orange;
+}
+
+// ! background color
+.bg-primary {
+  background: $primary;
+}
+.bg-secondary {
+  background: $secondary;
+}
+.bg-success {
+  background-color: $success;
+}
+.bg-info {
+  background: $info;
+}
+.text-danger {
+  background: $danger;
+}
+.bg-warning {
+  background: $warning;
+}
+.bg-white {
+  background: $white;
+}
+.bg-off-white {
+  background: $off_white;
+}
+.bg-light {
+  background: $light;
+}
+.bg-dark {
+  background: $light;
+}
+.bg-light-dark {
+  background: $light_dark;
+}
+.bg-black {
+  background: $black;
+}
+.bg-news-print {
+  background: $news_print;
+}
+.bg-gray {
+  background: $light_gray;
+}
+.bg-body {
+  background: #051923;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Poppins", sans-serif;
+}
+
+h4,
+h5,
+h6 {
+  font-family: "Roboto Mono", monospace;
+}

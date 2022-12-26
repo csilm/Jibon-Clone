@@ -1,0 +1,17 @@
+@import "../Framework.scss";
+
+.events {
+  margin: 80px;
+}
+
+.all-events {
+  .custom-btn-sm {
+    padding: 7px 30px !important;
+  }
+  .custom-icon-del {
+    font-size: 24px;
+  }
+  .custom-icon-edit {
+    font-size: 22px;
+  }
+}
