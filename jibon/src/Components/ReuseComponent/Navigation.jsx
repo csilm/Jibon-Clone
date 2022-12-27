@@ -72,18 +72,15 @@ const Navigation = () => {
                 </Link>
               </li>
               <li className="nav-item">
-<<<<<<< HEAD
                 <Link to="/login" className="custom-nav-link ">
                   Login
                 </Link>
               </li>
-
-=======
+              <li>
                 <Link to="/events" className="custom-nav-link">
                   Events
                 </Link>
               </li>
->>>>>>> 67693f68b12a89c27bfa31e46cb5b118d43e0327
               <li className="nav-item">
                 <Link
                   to="/"
