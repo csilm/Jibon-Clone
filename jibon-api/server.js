@@ -14,15 +14,15 @@ app.use("/user", userRoutes);
 app.use("/event", eventRoutes);
 
 // connect to MongoDB
-mongoose
+mongoose.set('strictQuery', true);
+try {
+  mongoose
   .connect(
     `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.0dldsqn.mongodb.net/?retryWrites=true&w=majority`
-  )
-  .then(() => {
-    app.listen(port, (req, res) => {
-      console.log("The Jibon app is running on port : ", port);
-    });
-  })
-  .catch((error) => {
-    console.log(error);
-  });
+)
+} catch (error) {
+  console.log(error);
+}
+app.listen(port, (req, res) => {
+  console.log("The Jibon app is running on port : ", port);
+});
